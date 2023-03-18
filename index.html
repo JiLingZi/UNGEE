@@ -1,0 +1,99 @@
+<!--
+@本站作者：王可鑫
+@作者邮箱：1833390024@qq.com
+@创建日期：2020-04-03 15:26:48
+@修改日期：2020-04-04 12:53:49
+@项目名称：UNGEE-考研日志
+@目标院校：无
+@郑重声明：版权所有，翻版必究！
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charest="UTF-8">
+        <title>UNGEE考研日志</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <style typle="text/css">
+            a{
+                text-decoration:none;
+            }
+            html,body,{/*全局黑白（背景图片除外）*/
+                filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+                -webkit-filter:grayscale(100%);
+                -moz-filter:grayscale(100%);
+                -ms-filter:grayscale(100%);
+                -o-filter:grayscale(100%);
+                filter:grayscale(100%);
+                filter:gray
+            }
+        </style>
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+
+    <body background="img/background.jpg">
+        <!--页面标题开始-->
+        <div id ="div2">
+            <p style="text-align: center"><font face="微软雅黑" size="5">
+                <b>UNGEE考研日志-王可鑫</b>
+                </font>
+            </p>    
+        </div><!--页面标题结束-->
+        <div id="div3">
+            <!--各科目菜单栏开始-->
+            <div id="div3a">
+                <table align="center">
+                    <tr><th><font face="楷体"><b>UNGEE各科目</b></font></th></tr>
+                    <tr><td><font face="楷体"><a href="htm/policy.html" target="view-window" style="color: black"><b>思想政治</b></a></font></td></tr>
+                    <tr><td><font face="楷体"><a href="htm/english.html" target="view-window" style="color: black"><b>英语二</b></a></font></td></tr>
+                    <tr><td><font face="楷体"><a href="htm/maths.html" target="view-window" style="color: black"><b>数学二</b></a></font></td></tr>
+                    <tr><td><font face="楷体"><a href="htm/physics.html" target="view-window" style="color: black"><b>普通物理</b></a></font></td></tr>
+                </table>
+            </div><!--各科目菜单栏结束-->
+            <!--考研倒计时开始-->
+            <div id="div3b">
+                <div id="deadtime-title">
+                    <p><font face="微软雅黑" size="6"><b>
+                        考研倒计时
+                    </b></font></p>
+                </div>
+                <div id="deadtime">
+                    <p><font face="微软雅黑" size="6"><b>
+                        <span id="t_d">00天</span>
+                        <span id="t_h">00时</span>
+                        <span id="t_m">00分</span>
+                        <span id="t_s">00秒</span>
+                    </b></font></p>
+                </div>
+                <div class="meta-media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/n2qQqnrDCpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe id="H2A 202 JDRS-1" src="//player.bilibili.com/player.html?aid=755421929&amp;bvid=BV1Vr4y1c7Qw&amp;cid=261259390&amp;page=1" width="100%" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen" style="height: 484.12px;"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><br />
+                        <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><br />
+                        </iframe>
+                </div>
+                <!--JS倒计时控件开始-->
+                <script>
+                    function GetRTime(){
+                        var EndTime= new Date('2021/12/25 09:00:00');
+                        var NowTime = new Date();
+                        var t =EndTime.getTime() - NowTime.getTime();
+                        var d=Math.floor(t/1000/60/60/24);
+                        var h=Math.floor(t/1000/60/60%24);
+                        var m=Math.floor(t/1000/60%60);
+                        var s=Math.floor(t/1000%60);
+                        document.getElementById("t_d").innerHTML = d + "天";
+                        document.getElementById("t_h").innerHTML = h + "时";
+                        document.getElementById("t_m").innerHTML = m + "分";
+                        document.getElementById("t_s").innerHTML = s + "秒";
+                    }
+                    setInterval(GetRTime,1000);
+                </script><!--JS倒计时控件开始-->               
+            </div><!--考研倒计时结束-->
+        </div>
+    </body>
+</html>
