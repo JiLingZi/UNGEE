@@ -1,0 +1,45 @@
+body{
+    margin:0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#div2{
+    margin-left:0px;
+    margin-right:0px;
+    border-radius: 15px;
+    width:100%;
+    height: 30px;
+    background-color: rgb(236, 240, 179,0.6);
+    border: 2px;
+    border-color: rgb(245, 234, 79);
+}
+#div3{
+    margin: 0;
+    width: 100%;
+    height:130px;
+}
+#div3a{
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+    float: left;
+    width: 10%;
+    height:130px;
+    text-align: center;
+    background-color: rgb(115, 186, 248,0.4);
+    border: 2px;
+    border-color: rgb(11, 103, 184);
+}
+#div3b{
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 130px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: rgb(221, 19, 19,0.6);
+}
